@@ -22,7 +22,8 @@ The ShipwreckChat, the app for you to chat with friends and exercise pirate ling
 
 ## Set up
 1. Configure Auth0
-Add `.env.local`, use your corresponding data.
+
+Add `.env.local` and fill it in with your corresponding data.
 
 ```txt
 AUTH0_SECRET=
