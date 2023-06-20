@@ -18,4 +18,14 @@ The ShipwreckChat, the app for you to chat with friends and exercise pirate ling
 - Jest for testing
 - Prisma as an ORM
 - Storybook for component maintenance
-- Zustand for client-side state management 
+- Zustand for client-side state management
+
+## Set up
+1. Configure Auth0
+Add `.env.local`, use your corresponding data.
+
+```AUTH0_SECRET=
+AUTH0_BASE_URL=
+AUTH0_ISSUER_BASE_URL=
+AUTH0_CLIENT_ID='
+AUTH0_CLIENT_SECRET=```
