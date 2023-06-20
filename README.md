@@ -7,3 +7,14 @@ Source for the Shipwreck Chat web app.
 ## About
 
 The ShipwreckChat, the app for you to chat with friends and exercise pirate lingo.
+
+## Stack
+
+- tRPC for API endpoint
+- Auth0 for authentication
+- Postgres for storing persistent data
+- Socket.io for realtime communication
+- Jest for testing
+- Prisma as an ORM
+- Storybook for component maintenance
+- Zustand for client-side state management 
