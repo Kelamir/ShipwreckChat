@@ -10,6 +10,7 @@ The ShipwreckChat, the app for you to chat with friends and exercise pirate ling
 
 ## Stack
 
+- Next.js framework with App Router,
 - tRPC for API endpoint
 - Auth0 for authentication
 - Postgres for storing persistent data
