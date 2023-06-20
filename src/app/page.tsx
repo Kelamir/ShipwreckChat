@@ -1,9 +1,9 @@
-import Image from 'next/image';
+import ChatList from '@/components/ChatList/';
+import InputArea from '@/components/InputArea/';
+import Landing from '@/components/Landing/';
+import MessageList from '@/components/MessageList/MessageList';
 
 export default function Home() {
-  return (
-    <>
-      <h1>ShipwreckChat</h1>
-    </>
-  );
+  const isLoggedIn = false;
+  return <>{isLoggedIn ? <ChatList /> : <Landing />}</>;
 }
