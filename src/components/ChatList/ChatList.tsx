@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function ChatList() {
   return (
     <>
@@ -6,7 +8,7 @@ export default function ChatList() {
           <h1 className="text-2xl font-bold">Chats</h1>
           <ul className="mt-4">
             <li className="flex items-center mb-4 p-2 bg-white rounded shadow">
-              <img
+              <Image
                 src="https://via.placeholder.com/50"
                 className="w-10 h-10 rounded-full"
                 alt="User image"

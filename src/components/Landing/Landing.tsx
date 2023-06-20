@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function Landing() {
   return (
     <>
@@ -23,7 +25,13 @@ export default function Landing() {
               Sign Up
             </a>
           </div>
-          <img className="mt-12 w-72" src="logo.png" alt="Pirate Ship" />
+          <Image
+            className="mt-12 w-72"
+            src="/logo.png"
+            alt="Pirate Ship"
+            width="512"
+            height="512"
+          />
         </div>
       </body>
     </>
