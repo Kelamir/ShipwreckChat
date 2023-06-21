@@ -4,7 +4,7 @@ import Link from 'next/link';
 export default function Landing() {
   return (
     <>
-      <body className="bg-gray-800 text-white font-serif">
+      <div className="bg-gray-800 text-white font-serif">
         <div className="min-h-screen flex flex-col justify-center items-center">
           <h1 className="text-5xl mb-8">Ahoy, welcome to ShipwreckChat!</h1>
           <p className="text-xl mb-12 px-4 text-center">
@@ -28,7 +28,7 @@ export default function Landing() {
             height="512"
           />
         </div>
-      </body>
+      </div>
     </>
   );
 }
