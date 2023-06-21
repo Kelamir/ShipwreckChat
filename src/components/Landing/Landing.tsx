@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Landing() {
   return (
@@ -12,12 +13,12 @@ export default function Landing() {
             daring adventures with fellow buccaneers from across the seven seas!
           </p>
           <div className="flex space-x-4">
-            <a
+            <Link
               href="/api/auth/login"
               className="bg-green-600 py-3 px-6 rounded-lg text-xl font-bold hover:bg-green-700"
             >
               Enter
-            </a>
+            </Link>
           </div>
           <Image
             className="mt-12 w-72"
