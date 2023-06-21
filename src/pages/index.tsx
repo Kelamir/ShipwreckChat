@@ -2,8 +2,11 @@ import ChatList from '@/components/ChatList/';
 import InputArea from '@/components/InputArea/';
 import Landing from '@/components/Landing/';
 import MessageList from '@/components/MessageList/MessageList';
+import Profile from '@/components/Profile';
+import { useUser } from '@auth0/nextjs-auth0/client';
 
 export default function Home() {
-  const isLoggedIn = false;
-  return <>{isLoggedIn ? <ChatList /> : <Landing />}</>;
+  const { user, isLoading } = useUser();
+  const isLoggedIn = !isLoading && user;
+  return <>{isLoggedIn ? <Profile /> : <Landing />}</>;
 }
