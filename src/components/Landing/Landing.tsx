@@ -13,16 +13,10 @@ export default function Landing() {
           </p>
           <div className="flex space-x-4">
             <a
-              href="/login"
+              href="/api/auth/login"
               className="bg-green-600 py-3 px-6 rounded-lg text-xl font-bold hover:bg-green-700"
             >
-              Log In
-            </a>
-            <a
-              href="/signup"
-              className="bg-blue-600 py-3 px-6 rounded-lg text-xl font-bold hover:bg-blue-700"
-            >
-              Sign Up
+              Enter
             </a>
           </div>
           <Image
