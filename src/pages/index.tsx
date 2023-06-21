@@ -7,6 +7,5 @@ import { useUser } from '@auth0/nextjs-auth0/client';
 
 export default function Home() {
   const { user, isLoading } = useUser();
-  const isLoggedIn = !isLoading && user;
-  return <>{isLoggedIn ? <Profile /> : <Landing />}</>;
+  return <>{!isLoading && user ? <Profile /> : <Landing />}</>;
 }
