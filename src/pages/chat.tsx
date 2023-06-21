@@ -1,12 +1,12 @@
-import WithAuth from "../utils/withAuth";
+import { withPageAuthRequired } from '@auth0/nextjs-auth0/client';
 
-const Chat = () => {
+function Chat() {
   return (
     <div>
       <p>This is the chat, protected with WithAuth</p>
       <p>Only authorized users can access it</p>
     </div>
   );
-};
+}
 
-export default WithAuth(Chat);
+export default withPageAuthRequired(Chat);
