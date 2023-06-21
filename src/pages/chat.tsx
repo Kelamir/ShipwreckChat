@@ -1,4 +1,4 @@
-import WithAuth from '../utils/withAuth';
+import WithAuth from "../utils/withAuth";
 
 const Chat = () => {
   return (

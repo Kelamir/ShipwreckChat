@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    images: {
+  images: {
     domains: ["s.gravatar.com"],
   },
-}
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

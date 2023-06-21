@@ -1,7 +1,7 @@
 // withAuth.tsx
-import { useUser } from '@auth0/nextjs-auth0/client';
-import { useRouter } from 'next/router';
-import { useEffect } from 'react';
+import { useUser } from "@auth0/nextjs-auth0/client";
+import { useRouter } from "next/router";
+import { useEffect } from "react";
 
 const withAuth = (Component: React.ComponentType) => {
   const AuthenticatedComponent: React.FC = (props) => {
@@ -11,7 +11,7 @@ const withAuth = (Component: React.ComponentType) => {
 
     useEffect(() => {
       if (!isLoading && !isAuthenticated) {
-        router.push('/login');
+        router.push("/login");
       }
     }, [isAuthenticated, router, isLoading]);
 
