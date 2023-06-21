@@ -11,12 +11,15 @@ export default function Profile() {
   return (
     user && (
       <div>
-        <Image
-          src={`${user.picture}`}
-          alt={`${user.picture}`}
-          width="128"
-          height="128"
-        />
+        {user.picture && (
+          <Image
+            src={`${user.picture}`}
+            alt={`${user.picture}`}
+            width="128"
+            height="128"
+          />
+        )}
+
         <h2>{user.name}</h2>
         <p>{user.email}</p>
       </div>
