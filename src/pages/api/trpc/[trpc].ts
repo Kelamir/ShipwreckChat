@@ -12,14 +12,6 @@ import { TRPCError } from '@trpc/server';
 const prisma = new PrismaClient();
 
 const appRouter = router({
-  getUser: publicProcedure.query(() => {
-    const { isLoading, user } = useUser();
-
-    if (!isLoading) {
-      return user;
-    }
-  }),
-
   storeUser: publicProcedure
     .input(
       z.object({
