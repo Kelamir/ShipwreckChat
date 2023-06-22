@@ -1,7 +1,9 @@
 // pages/_app.js
-import type { AppType } from "next/app";
-import { UserProvider } from "@auth0/nextjs-auth0/client";
-import "./globals.css";
+import type { AppType } from 'next/app';
+import { UserProvider } from '@auth0/nextjs-auth0/client';
+import { trpc } from '@/utils/trpc';
+
+import './globals.css';
 
 const MyApp: AppType = ({ Component, pageProps }) => {
   return (
@@ -11,4 +13,4 @@ const MyApp: AppType = ({ Component, pageProps }) => {
   );
 };
 
-export default MyApp;
+export default trpc.withTRPC(MyApp);
