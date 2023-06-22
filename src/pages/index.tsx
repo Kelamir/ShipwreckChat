@@ -1,12 +1,20 @@
-import ChatList from "@/components/ChatList/";
-import InputArea from "@/components/InputArea/";
-import Landing from "@/components/Landing/";
-import MessageList from "@/components/MessageList/MessageList";
-import Profile from "@/components/Profile";
-import { useUser } from "@auth0/nextjs-auth0/client";
+import { useUser } from '@auth0/nextjs-auth0/client';
+import { useRouter } from 'next/router';
+import { useEffect } from 'react';
 
 export default function Home() {
   const { user, isLoading } = useUser();
-  if (isLoading) return null;
-  return <>{!isLoading && user ? <Profile /> : <Landing />}</>;
+  const router = useRouter();
+
+  useEffect(() => {
+    if (!isLoading) {
+      if (user) {
+        router.replace('/chat');
+      } else {
+        router.replace('/landing');
+      }
+    }
+  });
+
+  return <></>;
 }
