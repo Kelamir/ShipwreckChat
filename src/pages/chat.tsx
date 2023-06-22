@@ -1,10 +1,11 @@
+import ChatList from '@/components/ChatList';
+import MessageList from '@/components/MessageList';
 import { withPageAuthRequired } from '@auth0/nextjs-auth0/client';
 
 function Chat() {
   return (
     <div>
-      <p>This is the chat, protected with WithAuth</p>
-      <p>Only authorized users can access it</p>
+      <ChatList />
     </div>
   );
 }
